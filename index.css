@@ -11,27 +11,102 @@
 }
 .top{
 	margin:0px;
-	height:5vh;
+	height:3vh;
     text-align: center;
 	padding-top:10px;
     font-size:10;
     background-color:#6693F5;
     color: white; 
 }
-.header{
-	height:10vh;
-	background-color:black;
-	position:relative;
-	
+*:before, *:after
+{
+	box-sizing:inherit;
 }
-.header{
-	text-align:right;
-	color:white;
-    display: flex;
-    padding: 10px;
-	font-weight:2px;
-    padding:10px 50px;
-	font-weight:lighter;
+
+html
+{
+	box-sizing:border-box;
+}
+
+/* 
+body
+{
+	font-family:tahoma;
+	margin:0;
+	/*background:none;
+	background-position:center;
+    overflow:hidden;
+}
+*/
+ul, nav
+{
+	list-style:none;
+	padding:0;
+	background-color:black;
+}
+#dropcontent
+{
+	position:absolute;
+	z-index:1;
+}
+#dropcontent a
+{   
+    text-decoration:none;
+	display:block;
+	background:black;
+	color:gray;
+	padding: 5px 20px;
+}
+
+ul li ul li 
+{
+	display:none;
+}
+ul li ul li:hover
+{
+	background-color:black;
+}
+ul li:hover ul li 
+{
+	display:block;
+}
+a
+{
+	color:grey;
+	text-decoration:none;
+	cursor:pointer;
+}
+h2
+{
+	font-size:2rem;
+	font-weight:500;
+	color:grey;
+	background-color:black;
+	margin:0;
+	font-family:tahoma;
+	letter-spacing:3px;
+}
+header{
+	margin:0;
+	position:absolute;
+	top:0.1;
+	left:0;
+	z-index:10;
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	color:gray;
+	padding:10px 80px 0;
+	background-color:black;
+}
+header nav ul
+{
+	display:flex;
+}
+header nav li
+{
+	margin:0 15px;
 }
 .cms{
     margin-left: 110px;
@@ -266,4 +341,3 @@ h3{
 	color:white;
 	background:gray;
 }
-
