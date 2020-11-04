@@ -9,70 +9,54 @@
 }
 .top
 {
-   display:flex;
    background-color:Dodgerblue;
-   flex-wrap:wrap;
-   justify-content:center;
+   align-content:center;
    color:white;
 }
 .top a
 {
 	color:white;
 	text-decoration:underline;
-}
-@media (max-width: 991px) {
-	body {
-		font-size: 11px;
-	}
-}
-.top
-{
-   display:flex;
-   background-color:Dodgerblue;
-   flex-wrap:wrap;
-   justify-content:center;
-   color:white;
-}
-.top a
-{
-	color:white;
-	text-decoration:underline;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+	align-content:center;
+	margin-left:250px;
+	margin-right:0px;
 }
 body {
   font-family: sans-serif;
   font-size: 16px;
 }
 nav {
-  background: #222;
+  background: black;
   padding: 0 15px;
+  align-content:space-between;
 }
 a {
-  color: white;
-  text-decoration: none;
+	display:flex;
+	flex-wrap:wrap;
+    color: white;
+    text-decoration: none;
+	justify-content:space-around;
+	margin-left: 100px;
+    margin-right: 100px;
 }
 .menu,
 .submenu {
   list-style-type: none;
 }
-.logo {
-  font-size: 20px;
-  padding: 7.5px 10px 7.5px 0;
+nav .menu .logo {
+  font-weight: 2rem;
 }
 .item {
   padding: 10px;
 }
 .item.button {
+	margin-left: 100px;
+    margin-right: 100px;
   padding: 9px 5px;
 }
 .item:not(.button) a:hover,
 .item a:hover::after {
-  color: #ccc;
+  color:white;
 }
 /* Mobile menu */
 .menu {
@@ -80,6 +64,10 @@ a {
   flex-wrap: wrap;
   justify-content:center;
   align-items: center;
+}
+#search{
+	margin-top: 10px;
+    margin-bottom: 10px;
 }
 .menu li a {
   display: flex;
@@ -107,7 +95,7 @@ a {
 }
 .button.secondary {
   /* divider between buttons and menu links */
-  border-bottom: 1px #444 solid;
+  border-bottom: 1px  white;
 }
 /* Submenu up from mobile screens */
 .submenu {
@@ -132,7 +120,7 @@ a {
   padding: 10px 15px;
 }
 .submenu-active {
-  background-color: #111;
+  background-color: white;
   border-radius: 3px;
 }
 
@@ -244,7 +232,7 @@ a {
 	border:1px;
 }
 
-.nav
+/*.nav
 {
 	display:flex;
 	justify-content:space-around;
@@ -281,7 +269,7 @@ a
 	color:grey;
 	text-decoration:none;
 	cursor:pointer;
-}
+}*/
 #title h1{
 	display:flex;
 	flex-wrap:wrap;
@@ -306,6 +294,10 @@ a
     padding: 3rem;
     text-align:start;
 	justify-content:space-around;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-right: 100px;
+  	margin-left: 100px;
 }
 .item-title
 {
@@ -314,7 +306,7 @@ a
 .heading
 {
     padding: 0em;
-    font-size:3em;
+    font-size:2em;
 	font-weight:normal;
     border-width: 0em;
 }
@@ -366,19 +358,24 @@ p
 /*CHROME + MUSIC */
 
 .cms{
-	margin-left: 110px;
-    margin-right: 110px;
-    margin-top: 40px;
+	margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+	margin-bottom: 30px;
 }
 #cm {
 	padding:100px;
+	margin-left: 100px;
+    margin-right: 100px;
 }
 .cmscontent{
     display: grid;
     grid-template-columns: repeat(auto-fit,20rem);
     grid-column-gap: 70px;
     grid-row-gap: 40px;
+	align-content:space-around;
     justify-content:center;
+	margin-bottom: 30px;
 }
 .cm1 img{
     width: 500px;
@@ -397,16 +394,22 @@ p
 
    padding:100px;
    justify-content:start;
+  
 }
 .wgh
 {
     padding: 0.5em;
+	margin-left: 100px;
+    margin-right: 100px;
+	margin-top: 30px;
 	
 }
 .wg1
 {
    display:flex;
    flex-wrap:wrap;
+   margin-left: 100px;
+    margin-right: 100px;
    justify-content:center;
 }
 .wg1 p{
@@ -443,9 +446,14 @@ p
 /*CHROME + WEBGL*/
 
 .cw{
-    margin-left: 110px;
-    margin-right: 110px;
-    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+	margin-bottom: 30px;
+}
+#cwh{
+	margin-left: 100px;
+    margin-right: 100px;
 }
 .cw2 h1{
     font-size: 16px;
@@ -474,13 +482,16 @@ p
 
  /*ALL CHROME EXPERIMENTS*/   
 .alc1{
-    margin-left: 110px;
-    margin-right: 110px;
-    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+	margin-bottom:40px;
 
 }
 #al {
 	padding:100px;
+	margin-left: 100px;
+    margin-right: 100px;
 }
 .alc1 h1{
     font-size: 16px;
@@ -585,23 +596,23 @@ p
 }
 .glo
 {
-  color: white;
-  font-size: 20px;
+  color: gray;
+  font-size: 50px;
   padding: 7.5px 10px 7.5px 10px;
 }
 a {
-  color: white;
+  color:gray;
   text-decoration: none;
   justify-content:space-around;
-}
+  align-content:space-between;
+  padding: 10px 10px 10px 10px;
+  }
 .fli ul li
 {
   display: flex;
   float: left;
   color: white;
   font-size: 20px;
-  padding: 7.5px 10px 7.5px 0;
   text-align:end;
   justify-content:space-around;
 }
-
