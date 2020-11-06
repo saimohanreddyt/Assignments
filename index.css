@@ -65,10 +65,6 @@ nav .menu .logo {
   justify-content:center;
   align-items: center;
 }
-#search{
-	margin-top: 10px;
-    margin-bottom: 10px;
-}
 .menu li a {
   display: flex;
   padding: 15px 5px;
@@ -166,6 +162,23 @@ nav .menu .logo {
     border-color: darkblue;
   }
 }
+#search{
+	margin-top: 10px;
+    margin-bottom: 10px;
+	background:black;
+	color:white;
+}
+select
+{
+	display:flex;
+	flex-direction:column;
+	align-content:center;
+	background:black;
+	color:white;
+	margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 /* Desktop menu */
 @media all and (min-width: 960px) {
   .menu {
@@ -186,19 +199,19 @@ nav .menu .logo {
     order: 2;
   }
   .submenu-active .submenu {
-    display: block;
+    display: ;
     position: absolute;
     left: 0;
     top: 68px;
     background: #111;
   }
   .toggle {
-    display: none;
+    display: ;
   }
   .submenu-active {
     border-radius: 0;
   }
-}
+}*/
 
 /*ENTIRE BODY*/
 @media all and (min-width: 960px) {
@@ -232,44 +245,6 @@ nav .menu .logo {
 	border:1px;
 }
 
-/*.nav
-{
-	display:flex;
-	justify-content:space-around;
-	color:white;
-}
-ul, nav
-{   
-    display:flex;
-	list-style:none;
-	padding:0;
-	background-color:black;
-}
-ul a
-{
-	justify-content:space-around;
-}
-ul li ul li
-{
-	display:flex;
-	display:none;
-}
-ul li ul li:hover
-{
-	background-color:black;
-	display:flex;
-    flex-direction:column;
-}
-ul li:hover ul li 
-{
-	display:block;
-}
-a
-{
-	color:grey;
-	text-decoration:none;
-	cursor:pointer;
-}*/
 #title h1{
 	display:flex;
 	flex-wrap:wrap;
@@ -332,7 +307,7 @@ h2{
     display:flex;
 	flex-wrap:wrap;
 	padding:50 30px;
-	font-size:14px;
+	font-size:13px;
 	font-weight:normal;
 	
 }
@@ -340,7 +315,7 @@ h3{
     display:flex;
 	flex-wrap:wrap;
 	padding:50 50px;
-	font-size:13px;
+	font-size:11.5px;
 	font-weight:normal;
 	color:gray;
 	
@@ -351,7 +326,7 @@ p
     display:flex;
 	flex-wrap:wrap;
 	font-style:none;
-	font-size:13px;
+	font-size:12px;
 	font-weight:normal;
 }
 .item-title caps
@@ -504,79 +479,11 @@ p
     justify-content: center;
 	justify-items:stretch;
 }
-.pic1 img{
+.pic img{
     width:350px;
     height: 250px;
 }
-.pic2 img{
-    width:350px;
-    height: 250px;
-}
-.pic3 img{
-	width:350px;
-    height: 250px;
-}
-.pic4 img{
-	width:350px;
-    height: 250px;
-}
-.pic5 img{
-	
-	width:350px;
-    height: 250px;
-}
-.pic6 img{
-	width:350px;
-    height: 250px;
-}
-.pic7 img{
-	width:350px;
-    height: 250px;
-}
-.pic8 img{
-    width:350px;
-    height: 250px;
-}
-.pic9 img{
-    width:350px;
-    height: 250px;
-}
-.pic10 img{
-    width:350px;
-    height: 250px;
-}
-.pic11 img{
-	width:350px;
-    height: 250px;;
-}
-.pic12 img{
-	width:350px;
-    height: 250px;
-}
-.pic13 img{
-	width:350px;
-    height: 250px;
-}
-.pic14 img{
-	width:350px;
-    height: 250px;
-}
-.pic15 img{
-	width:350px;
-    height: 250px;
-}
-.pic16 img{
-	width:350px;
-    height: 250px;
-}
-.pic17 img{
-	width:350px;
-    height: 250px;
-}
-.pic18 img{
-	width:350px;
-    height: 250px;
-}
+
 
 /*FOOTER*/
 .google-icon
@@ -585,7 +492,7 @@ p
    height: 10px;
    float:left;
 }
-
+@media all and (min-width: 960px) {
 .footer-main{
     display: flex;
     background: rgb(0, 0, 0);
@@ -593,6 +500,8 @@ p
     list-style: none;
 	justify-content:space-around;
 	
+	
+}
 }
 .glo
 {
