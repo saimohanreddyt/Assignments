@@ -1,0 +1,239 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background:rgb(0, 0, 0);
+	color:rgb(145, 133, 133);
+}
+
+/*body{
+ background-image:url("https://img.apksum.com/e1/com.ang.moviewatchnew/3.0/icon.png");
+  background-color: #cccccc;
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}*/
+.container{
+	display:flex;
+    justify-content:space-between;
+	margin-left:100px;
+	margin-right:100px;
+	margin-top:10px;
+    margin-bottom:10px;
+    color:rgb(145, 133, 133);
+}
+.container a{
+    color: white;
+    text-decoration: none;
+}
+.container a:hover {
+  background-color:black;
+  color: gray;
+}
+.movie {
+    margin-top: 50px;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    transition: 250ms all;
+}
+
+section .imageContainer {
+    flex: 0 0 auto;
+}
+
+.content {
+    display: none;
+    position: relative;
+    min-height: 200px;
+    width: 100%;
+    border: 1px solid lightgrey;
+    padding: 20px;
+}
+
+
+.content-display {
+    display: block;
+}
+
+
+.content-display {
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.content div {
+    margin: 10px;
+}
+
+
+#content-close {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    padding: 10px;
+    /* width: 35px;; */
+    border: 1px solid lightgrey;
+    border-radius: 45%;
+    left: 20px;
+}
+
+
+.imageContainer {
+    transition: 250ms all;
+    width: 300px;
+}
+
+
+.imageContainer:hover {
+    margin-left: 0 40px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.imageContainer {
+    border-radius: 4px;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.imageContainer img {
+    width: 100%;
+}
+
+.btn {
+    color: gray;
+    background-color:black;
+    border-color: #silver;
+    outline: none;
+    min-height: 38px;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    width: 760px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    outline: none;
+    color: white;
+    background-color:greay;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+@media screen and (max-width: 992px) {
+  .container a{
+	display:flex;
+	flex-wrap:wrap;
+    color: white;
+    text-decoration: none;
+	justify-content:space-between;
+	
+  }
+}
+@media screen and (max-width: 600px) {
+  .container a{
+	display:flex;
+	flex-wrap:wrap;
+    color: white;
+    text-decoration: none;
+	justify-content:space-between;
+	
+  }
+}
+span .logo {
+	color:black;
+	font-weight:30px;
+	background-color:rgb(228, 228, 19);
+}
+.input{
+	background-color:white;
+	color:black;
+	width:800px;
+	height:30px;
+}
+div.imdb{
+	display:flex;
+	justify-content:space-around;
+}
+@media screen and (max-width: 600px) {
+	div.imdb{
+		display:none;
+	}
+}
+div.watch{
+	display:flex;
+	justify-content:space-around;
+}
+@media screen and (max-width: 600px) {
+	div.watch{
+		display:none;
+	}
+}
+footer{
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:column;
+  margin-left:100px;
+  margin-right:100px;
+}
+@media screen and (max-width: 992px) {
+	.foot a{
+		background:rgb(83, 83, 38);
+        color:black;
+	    font-weight:30px;
+		text-decoration:none;
+		margin-top: 100px;
+	    margin-left: 100px;
+        margin-right: 100px;
+			
+		}
+}
+@media screen and (min-width: 600px) {
+   div.foot{
+	display: none;
+	margin-left:100px;
+	margin-right:100px;
+}
+.foot1{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+    color: white;
+}
+.foot2{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	
+}
+.foot2 a{
+	text-decoration:none;
+    color: white;
+	
+}
+	
